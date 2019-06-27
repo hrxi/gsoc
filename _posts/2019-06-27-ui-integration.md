@@ -23,6 +23,6 @@ Since the ability to receive files via Jingle can also be reasonably expected
 if the client supports sending them, we basically have two blockers for
 merging.
 
-![Screenshot of Dino showing the paper clip button and a lot of file transfers]({{site.baseurl}}assets/2019-06-27-ui-integration-screenshot.png)
+![Screenshot of Dino showing the paper clip button and a lot of file transfers]({{site.baseurl}}/assets/2019-06-27-ui-integration-screenshot.png)
 
 Above you can see the chat window after some testing. ;)
