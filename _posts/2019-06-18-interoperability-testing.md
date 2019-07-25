@@ -52,9 +52,9 @@ accepting an offer I didn't make. I *think* this is a violation of the Jingle
 XEP ([XEP-0166](https://xmpp.org/extensions/xep-0166.html)): If the other party
 wants to negotiate a different transport, it should probably use the
 `transport-replace` Jingle action. I created an issue
-([Conversations#](https://github.com/siacs/Conversations/issues/3478)) which
-was quickly resolved. I have yet to test the fix, I don't have a development
-setup for Conversations yet.
+([Conversations#3478](https://github.com/siacs/Conversations/issues/3478))
+which was quickly resolved. I have yet to test the fix, I don't have a
+development setup for Conversations yet.
 
 The in-band bytestream file transfers I tested were quite slow (<2KB/s),
 probably some rate-limiting of the servers, I didn't investigate furtherly.
