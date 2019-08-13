@@ -81,9 +81,11 @@ this and the fact that Conversations did not send a `sid` and got a working
 fallback.
 [Conversations#3515](https://github.com/siacs/Conversations/issues/3515).
 
-**Conversations → Dino** Fails in step 4, for some reason Conversations doesn't
-send a `transport-replace` after the SOCKS5 transport failed.
-[Conversations#3514](https://github.com/siacs/Conversations/issues/3514).
+**Conversations → Dino** <s>Fails in step 4, for some reason Conversations
+doesn't send a `transport-replace` after the SOCKS5 transport failed.
+[Conversations#3514](https://github.com/siacs/Conversations/issues/3514). </s>
+**EDIT** Seems to be my mistake, couldn't reproduce it when trying to test it
+with the Conversations developer.
 
 **Dino → Gajim** Fails in a funny way, in step 5. Gajim responds to
 `transport-replace` with a `session-accept`. `session-accept` is only valid in
@@ -98,3 +100,6 @@ bytestream even though it is the initiator.
 Of course I'm not sure that I diagnosed all of these issues correctly, these
 might be mistakes on my part and in my code, too. Let's see how these issue
 threads develop.
+
+**EDIT** And of course there was at least one mistake by me, Conversations →
+Dino seems to work.
